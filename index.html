@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b57d0">
+<meta name="description" content="Aditya Job Updates - Government and Private Jobs, Admit Cards, Results, Study Material and Previous Year Papers.">
+<title>Aditya Job Updates</title>
+<link rel="manifest" href="manifest.json">
+<style>
+:root{--blue:#0b57d0;--navy:#102a43;--bg:#f4f7fb;--card:#fff;--text:#172b4d;--muted:#607080;--green:#16803c;--red:#c62828;--amber:#b26a00}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.wrap{width:min(960px,100% - 24px);margin:auto}
+header{background:linear-gradient(135deg,#0b57d0,#174ea6);color:#fff;padding:22px 0 25px}
+.brand{font-size:28px;font-weight:800}.tag{margin-top:5px;opacity:.93}
+.search{display:flex;gap:8px;margin-top:17px}.search input{flex:1;min-width:0;border:0;border-radius:11px;padding:14px;font-size:16px}.search button{border:0;border-radius:11px;padding:0 15px;font-weight:700}
+nav{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 9px #0001;overflow:auto}.nav{display:flex;gap:7px;padding:9px 0}.nav button{white-space:nowrap;background:#fff;border:1px solid #d7e0ea;border-radius:22px;padding:9px 12px;color:var(--text)}.nav button.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+main{padding:17px 0 90px}.notice{background:#fff8e1;border-left:4px solid #f2b01e;padding:12px;border-radius:9px;font-size:14px;margin-bottom:17px}
+.hero{background:#fff;border-radius:16px;padding:18px;border:1px solid #e1e7ef;box-shadow:0 3px 12px #0000000b}.hero h1{margin:0;font-size:24px}.hero p{color:var(--muted);line-height:1.5;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:14px}.stat{background:#f5f8fd;border-radius:11px;padding:12px}.stat b{font-size:20px;display:block}.stat span{font-size:12px;color:var(--muted)}
+h2{font-size:21px;margin:22px 0 12px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.tile{background:var(--card);border:1px solid #e1e7ef;border-radius:14px;padding:15px;text-align:center;font-weight:700;box-shadow:0 2px 8px #00000008;cursor:pointer}.tile .ico{font-size:27px;display:block;margin-bottom:7px}
+.toolbar{display:flex;gap:8px;overflow:auto;margin-bottom:12px}.filter{white-space:nowrap;border:1px solid #ccd7e3;background:#fff;border-radius:20px;padding:8px 12px}.filter.active{background:#eaf1ff;border-color:#8eb0ef;color:var(--blue)}
+.cards{display:grid;gap:11px}.card{background:#fff;border:1px solid #e0e6ee;border-radius:14px;padding:15px;box-shadow:0 2px 9px #00000009}.card h3{margin:0 0 8px;font-size:18px}.meta{font-size:14px;color:var(--muted);line-height:1.65}.deadline{color:var(--red);font-weight:700}.badge{display:inline-block;border-radius:15px;padding:4px 8px;font-size:11px;font-weight:700;margin-bottom:7px;background:#edf3ff;color:var(--blue)}.badge.urgent{background:#ffeded;color:var(--red)}.badge.soon{background:#fff5df;color:var(--amber)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{display:inline-block;text-decoration:none;border-radius:9px;padding:10px 13px;font-size:14px;font-weight:700}.primary{background:var(--blue);color:#fff}.outline{border:1px solid #b9c6d6;color:var(--text);background:#fff}.green{background:var(--green);color:#fff}
+.empty{background:#fff;padding:24px;text-align:center;color:var(--muted);border-radius:12px}
+.hidden{display:none}.coming{padding:25px;text-align:center}.coming .big{font-size:44px}.coming p{color:var(--muted);line-height:1.5}
+footer{background:var(--navy);color:#dce7f5;text-align:center;padding:24px 12px;font-size:13px;line-height:1.6}
+.whatsapp{position:fixed;right:15px;bottom:16px;z-index:30;background:var(--green);color:#fff;text-decoration:none;padding:13px 17px;border-radius:28px;font-weight:800;box-shadow:0 5px 18px #0003}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="brand">Aditya Job Updates</div>
+<div class="tag">Govt. & Private Jobs • Admit Cards • Results • Study Resources</div>
+<div class="search"><input id="search" aria-label="Search" placeholder="Search jobs, exams, posts..." oninput="render()"><button onclick="clearSearch()">Clear</button></div>
+</div></header>
+
+<nav><div class="wrap nav">
+<button class="active" data-id="home" onclick="show('home',this)">🏠 Home</button>
+<button data-id="jobs" onclick="show('jobs',this)">💼 Jobs</button>
+<button data-id="study" onclick="show('study',this)">📚 Study Material</button>
+<button data-id="papers" onclick="show('papers',this)">📄 Old Papers</button>
+<button data-id="mock" onclick="show('mock',this)">📝 Mock Tests</button>
+<button data-id="admit" onclick="show('admit',this)">🎫 Admit Cards</button>
+<button data-id="results" onclick="show('results',this)">📊 Results</button>
+</div></nav>
+
+<main class="wrap">
+<div class="notice">⚠️ <b>Safety first:</b> Always verify eligibility, vacancies, dates, fees and the official notification before applying. We do not ask for OTPs, passwords or payment through this website.</div>
+
+<section id="home">
+<div class="hero">
+<h1>Your Career & Exam Update Hub</h1>
+<p>Find job notifications, recruitment information, admit cards and results in one simple place. Study Material and Old Papers sections are ready for future PDF resources.</p>
+<div class="actions"><a class="btn primary" href="#jobs" onclick="showById('jobs')">🔎 Explore Jobs</a><a class="btn green" href="https://whatsapp.com/channel/0029Vb98ZcT6xCSNUSf1Rv1t" target="_blank" rel="noopener">📲 Join WhatsApp</a></div>
+<div class="stats"><div class="stat"><b>6+</b><span>Job Categories</span></div><div class="stat"><b>24×7</b><span>Access</span></div><div class="stat"><b>PDF</b><span>Resources Coming</span></div><div class="stat"><b>Free</b><span>Access</span></div></div>
+</div>
+
+<h2>Browse Categories</h2><div class="grid">
+<div class="tile" onclick="showById('jobs');setJobCat('Government')"><span class="ico">🏛️</span>Government Jobs</div>
+<div class="tile" onclick="showById('jobs');setJobCat('Private')"><span class="ico">🏢</span>Private Jobs</div>
+<div class="tile" onclick="showById('jobs');setJobCat('Railway')"><span class="ico">🚆</span>Railway</div>
+<div class="tile" onclick="showById('jobs');setJobCat('Banking')"><span class="ico">🏦</span>Banking</div>
+<div class="tile" onclick="showById('jobs');setJobCat('Teaching')"><span class="ico">👨‍🏫</span>Teaching</div>
+<div class="tile" onclick="showById('jobs');setJobCat('Defence')"><span class="ico">👮</span>Police & Defence</div>
+<div class="tile" onclick="showById('jobs');setJobCat('Rajasthan')"><span class="ico">🏜️</span>Rajasthan Jobs</div>
+<div class="tile" onclick="showById('study')"><span class="ico">📚</span>Study Material</div>
+<div class="tile" onclick="showById('papers')"><span class="ico">📄</span>Old Papers</div>
+<div class="tile" onclick="showById('admit')"><span class="ico">🎫</span>Admit Cards</div>
+<div class="tile" onclick="showById('results')"><span class="ico">📊</span>Results</div>
+<div class="tile" onclick="showById('mock')"><span class="ico">📝</span>Mock Tests</div>
+</div>
+
+<h2>Latest Updates</h2><div id="homejobs" class="cards"></div>
+</section>
+
+<section id="jobs" class="hidden">
+<h2>💼 Jobs & Recruitment</h2>
+<div class="toolbar" id="jobfilters"></div>
+<div id="jobcards" class="cards"></div>
+</section>
+
+<section id="study" class="hidden"><div class="coming"><div class="big">📚</div><h2>Study Material</h2><p>This section is ready for your real PDFs. We can later organize resources subject-wise: <b>Rajasthan GK, Current Affairs, GK, Maths, Reasoning, English, Hindi, Computer, Banking & Finance</b>.</p><div class="grid"><div class="tile">🇮🇳 GK</div><div class="tile">🗞️ Current Affairs</div><div class="tile">🧮 Maths</div><div class="tile">🧠 Reasoning</div><div class="tile">🔤 English</div><div class="tile">💻 Computer</div><div class="tile">🏜️ Rajasthan GK</div><div class="tile">🏦 Banking</div></div></div></section>
+
+<section id="papers" class="hidden"><div class="coming"><div class="big">📄</div><h2>Old / Previous Year Papers</h2><p>This section is ready for genuine papers. We can organize them by <b>exam + year + subject</b>, with View PDF and Download buttons when files are added.</p><div class="grid"><div class="tile">🚆 Railway</div><div class="tile">🏦 Banking</div><div class="tile">🏜️ Rajasthan</div><div class="tile">👮 Police & Defence</div><div class="tile">👨‍🏫 Teaching</div><div class="tile">📋 SSC</div><div class="tile">🏛️ Other Govt Exams</div><div class="tile">📝 Practice Papers</div></div></div></section>
+
+<section id="mock" class="hidden"><div class="coming"><div class="big">📝</div><h2>Mock Tests</h2><p>Mock tests can be added exam-wise and subject-wise in a future update.</p></div></section>
+<section id="admit" class="hidden"><div class="coming"><div class="big">🎫</div><h2>Admit Cards</h2><p>Keep official admit-card links here and verify the exam authority before downloading.</p></div></section>
+<section id="results" class="hidden"><div class="coming"><div class="big">📊</div><h2>Results</h2><p>Keep official result links here and verify the result portal before entering any personal information.</p></div></section>
+</main>
+
+<a class="whatsapp" href="https://whatsapp.com/channel/0029Vb98ZcT6xCSNUSf1Rv1t" target="_blank" rel="noopener">📲 Join WhatsApp</a>
+<footer><b>Aditya Job Updates</b><br>Govt. & Private Jobs • Study Material • Old Papers • Mock Tests<br><br>Educational/informational platform. Always use official sources for final verification.</footer>
+
+<script>
+const jobs=[
+{title:"Rajasthan Government Recruitment 2026",cat:"Government",posts:"Various",qual:"As per post",date:"Check official notification",status:"New"},
+{title:"Latest Railway Recruitment 2026",cat:"Railway",posts:"Various",qual:"10th / ITI / Other",date:"Check official notification",status:"New"},
+{title:"Banking Jobs 2026",cat:"Banking",posts:"Various",qual:"Graduation / As applicable",date:"Check official notification",status:"New"},
+{title:"Teaching Recruitment 2026",cat:"Teaching",posts:"Various",qual:"As per post",date:"Check official notification",status:"New"},
+{title:"Defence & Police Jobs 2026",cat:"Defence",posts:"Various",qual:"As per post",date:"Check official notification",status:"Closing Soon"},
+{title:"Private Jobs & Walk-in Opportunities",cat:"Private",posts:"Various",qual:"As per employer",date:"Varies",status:"Latest"},
+{title:"Rajasthan Jobs & Recruitment Updates",cat:"Rajasthan",posts:"Various",qual:"As per post",date:"Check official notification",status:"Latest"}
+];
+let jobCat="All";
+function jobCard(j){let cl=j.status==="Closing Soon"?"urgent":j.status==="New"?"":"soon";return `<article class="card"><span class="badge ${cl}">${j.status}</span><h3>${j.title}</h3><div class="meta">📌 Posts: ${j.posts}<br>🎓 Qualification: ${j.qual}<br>📅 Last Date: <span class="deadline">${j.date}</span><br>🏷️ Category: ${j.cat}</div><div class="actions"><a class="btn primary" href="#" onclick="soon(event)">Apply Now</a><a class="btn outline" href="#" onclick="soon(event)">Official Notification</a></div></article>`}
+function render(){let q=document.getElementById('search').value.toLowerCase().trim();let data=jobs.filter(j=>(jobCat==="All"||j.cat===jobCat)&&(!q||(j.title+" "+j.cat+" "+j.qual).toLowerCase().includes(q)));let out=data.length?data.map(jobCard).join(""):'<div class="empty">No matching jobs found. Try another search or category.</div>';document.getElementById('jobcards').innerHTML=out;document.getElementById('homejobs').innerHTML=jobs.slice(0,4).map(jobCard).join("");document.getElementById('jobfilters').innerHTML=["All","Government","Private","Railway","Banking","Teaching","Defence","Rajasthan"].map(c=>`<button class="filter ${c===jobCat?'active':''}" onclick="setJobCat('${c}')">${c}</button>`).join("")}
+function setJobCat(c){jobCat=c;show('jobs',document.querySelector('[data-id="jobs"]'));render()}
+function show(id,btn){document.querySelectorAll('main section').forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');window.scrollTo({top:document.querySelector('main').offsetTop-55,behavior:'smooth'});render()}
+function showById(id){let b=document.querySelector(`[data-id="${id}"]`);show(id,b)}
+function clearSearch(){document.getElementById('search').value='';render()}
+function soon(e){e.preventDefault();alert("This is a demo resource card. Add the verified official URL/PDF to activate this button.")}
+render();
+if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body></html>
