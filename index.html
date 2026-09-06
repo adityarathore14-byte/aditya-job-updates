@@ -1,662 +1,1158 @@
 
+in
+Vo
+NR1
+2.20 5G 5G KB/s
+github.com/adityarath +
+=
+/ aditya-job-...
+Code Issues Pull requests
+← Files
+main
+aditya-job-updates/index.html
+adityarathore14-byte 1 minute ago
+662 lines (520 loc) 11.2 KB
+Code
+Blame
+49
+More
+<>
+A
+...
+1
+2
 <!DOCTYPE html>
+3
 <html lang="en">
+4
 <head>
+5
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b57d0">
-<meta name="description" content="Aditya Job Updates - Government and Private Jobs, Study Material, Old Papers, Current Affairs, Admit Cards and Results">
-<link rel="manifest" href="manifest.json">
-
+6
+7
+<meta name="viewport" content="width=devic <meta name="theme-color" content="#0b57d0'
+8
+9
+10
+11
+12
+13
+14
+* {
+15
+16
+<meta name="description" content="Aditya <link rel="manifest" href="manifest.json">
 <title>Aditya Job Updates</title>
-
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+box-sizing: border-box;
+margin:0;
+17
+padding:0;
+18
 }
-
-body{
-  font-family:Arial,sans-serif;
-  background:#f4f7fb;
-  color:#172033;
+19
+20
+body {
+21
+22
+23
+font-family: Arial, sans-serif;
+background: #f4f7fb;
+color:#172033;
+24
 }
-
-header{
-  background:linear-gradient(135deg,#0b57d0,#123b8f);
-  color:white;
-  padding:20px 15px;
-  text-align:center;
+25
+26
+27
+28
+29
+30
+header {
+background: linear-gradient(135deg, #0b57
+color: white;
+padding: 20px 15px;
+text-align:center;
+31
 }
-
-.logo{
-  font-size:28px;
-  font-weight:bold;
+32
+33
+.logo {
+34
+font-size:28px;
+35
+font-weight:bold;
+36
 }
-
+37
+38
 .tagline{
-  margin-top:6px;
-  font-size:14px;
+39
+margin-top:6px;
+40
+font-size:14px;
+41
 }
-
-.container{
-  max-width:950px;
-  margin:auto;
-  padding:15px;
+42
+43
+.container {
+44
+max-width:950px;
+45
+margin:auto;
+46
+padding:15px;
+47
 }
-
+48
+49
 .search{
-  margin:15px 0;
+50
+margin:15px 0;
+51
 }
-
+52
+53
 .search input{
-  width:100%;
-  padding:14px;
-  border:1px solid #ccd5e0;
-  border-radius:10px;
-  font-size:16px;
+54
+55
+56
+57
+58
+width: 100%;
+padding: 14px;
+border:1px solid #ccd5e0;
+border-radius: 10px;
+font-size: 16px;
+59
 }
-
+60
+61
 nav{
-  display:flex;
-  gap:8px;
-  overflow-x:auto;
-  padding:10px 0;
-  position:sticky;
-  top:0;
-  background:#f4f7fb;
-  z-index:10;
+62
+display: flex;
+63
+gap:8px;
+64
+overflow-x:auto;
+65
+padding: 10px 0;
+66
+position: sticky;
+67
+top:0;
+68
+background: #f4f7fb;
+69
+z-index:10;
+70
 }
-
+71
+72
 nav button{
-  border:0;
-  background:white;
-  color:#0b57d0;
-  padding:11px 15px;
-  border-radius:20px;
-  white-space:nowrap;
-  font-weight:bold;
-  box-shadow:0 2px 7px #ccd3dd;
+73
+border:0;
+74
+background: white;
+75
+color:#0b57d0;
+76
+padding:11px 15px;
+77
+border-radius: 20px;
+78
+white-space: nowrap;
+79
+font-weight:bold;
+80
+box-shadow:0 2px 7px #ccd3dd;
+81
 }
-
-nav button.active{
-  background:#0b57d0;
-  color:white;
+82
+83
+nav button.active {
+84
+background: #0b57d0;
+85
+color:white;
+86
 }
-
+87
+88
 .hero{
-  background:white;
-  border-radius:15px;
-  padding:22px;
-  margin:10px 0 18px;
-  box-shadow:0 3px 12px #dce2ea;
+89
+background: white;
+90
+border-radius: 15px;
+91
+padding: 22px;
+92
+93
+margin:10px 0 18px;
+box-shadow:0 3px 12px #dce2ea;
+94
 }
-
-.hero h1{
-  color:#0b57d0;
-  margin-bottom:8px;
+95
+96
+97
+98
+.hero h1 { color:#0b57d0; margin-bottom:8px;
+99
 }
-
-.hero p{
-  line-height:1.6;
+100
+101
+102
+.hero p{ line-height:1.6;
+103
 }
-
+104
+105
 .whatsapp{
-  display:inline-block;
-  margin-top:15px;
-  padding:13px 18px;
-  background:#168c45;
-  color:white;
-  text-decoration:none;
-  border-radius:10px;
-  font-weight:bold;
+106
+display: inline-block;
+107
+108
+109
+110
+111
+112
+113
+margin-top:15px;
+padding: 13px 18px; background: #168c45;
+color:white;
+text-decoration:none;
+border-radius: 10px;
+font-weight:bold;
+114
 }
-
-section{
-  margin:20px 0;
+115
+116
+section {
+117
+margin: 20px 0;
+118
 }
-
+119
+120
+121
+122
 .section-title{
-  margin-bottom:12px;
-  color:#102a43;
+margin-bottom:12px;
+color:#102a43;
+123
 }
-
+124
+125
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:12px;
-}
-
+126
+127
+128
+display:grid;
+grid-template-columns: repeat (auto-fit, mi
+gap:12px;
+129
+130
+131
 .card{
-  background:white;
-  border-radius:12px;
-  padding:17px 12px;
-  text-align:center;
-  box-shadow:0 3px 10px #dce2ea;
-  cursor:pointer;
+132
+background: white;
+133
+134
+135
+136
+137
+border-radius:12px;
+padding: 17px 12px;
+text-align:center;
+box-shadow:0 3px 10px #dce2ea;
+cursor: pointer;
+138
 }
-
-.card .icon{
-  font-size:28px;
-  margin-bottom:8px;
+139
+140
+.card .icon{ font-size:28px; margin-bottom:8px;
+141
+142
+143
 }
-
-.card h3{
-  font-size:15px;
+144
+145
+146
+147
 }
-
-.card p{
-  font-size:13px;
-  margin-top:5px;
-  color:#64748b;
+148
+149
+150
+151
+152
+.card h3{ font-size: 15px;
+.card p{ font-size: 13px; margin-top:5px;
+color: #64748b;
+153
 }
-
+154
+155
+156
+157
 .list{
-  display:grid;
-  gap:12px;
+display:grid; gap:12px;
+158
 }
-
+159
+160
 .job{
-  background:white;
-  border-left:5px solid #0b57d0;
-  border-radius:10px;
-  padding:15px;
-  box-shadow:0 2px 9px #dce2ea;
+161
+162
+163
+164
+background: white;
+border-left:5px solid #0b57d0;
+border-radius: 10px;
+padding: 15px; box-shadow:0 2px 9px #dce2ea;
+165
+166
 }
-
+167
+168
+169
+170
 .job h3{
-  color:#0b57d0;
-  margin-bottom:7px;
+color:#0b57d0; margin-bottom:7px;
+171
 }
-
+172
+173
 .job p{
-  margin:5px 0;
-  font-size:14px;
+174
+175
+margin:5px 0;
+font-size:14px;
+176
 }
-
-.job button{
-  margin-top:9px;
-  padding:9px 13px;
-  border:0;
-  background:#0b57d0;
-  color:white;
-  border-radius:7px;
+177
+178
+179
+180
+181
+182
+183
+184
+.job button{ margin-top:9px;
+padding: 9px 13px;
+border:0; background: #0b57d0;
+color: white; border-radius:7px;
+185
 }
-
+186
+187
+188
 .category{
-  border-left-color:#168c45;
-}
-
+border-left-color: #168c45;
 .category h3{
-  color:#168c45;
+color:#168c45;
+189
 }
-
+190
+191
+192
+193
+}
+194
+195
+196
 .hidden{
-  display:none;
+display:none;
+197
+198
+199
 }
-
 .small{
-  font-size:13px;
-  color:#64748b;
-  margin-top:5px;
+200
+201
+202
+203
 }
-
-footer{
-  text-align:center;
-  padding:25px 10px;
-  margin-top:30px;
-  background:#102a43;
-  color:white;
-  font-size:14px;
+204
+205 206
+font-size: 13px;
+color: #64748b; margin-top: 5px;
+207
+208
+209
+210
+211
+footer {
+text-align:center;
+padding: 25px 10px; margin-top:30px; background: #102a43; color: white; font-size:14px;
+@media (max-width: 600px) {
+.logo {
+font-size:24px;
+212
 }
-
-@media(max-width:600px){
-  .logo{
-    font-size:24px;
-  }
-
-  .hero h1{
-    font-size:23px;
-  }
+213
+214
+215
+216
+217
 }
+218
+219
+220
+221
+222
+} }
+223
+.hero h1 {
+font-size:23px;
+224
+225
+226
+227
 </style>
 </head>
-
 <body>
-
 <header>
-  <div class="logo">Aditya Job Updates</div>
-  <div class="tagline">
-    Govt. & Private Jobs • Study Material • Old Papers • Career Guide
-  </div>
+<div class="logo">Aditya Job Updates</di
+<div class="tagline"> Govt. & Private Jobs Study Material
+</div>
+228
+229
+230
+231
+232
+233
 </header>
-
+234
+235
 <div class="container">
-
+236
+237
+238
+239
+240
+241
+242
 <div class="search">
-  <input
-    id="searchBox"
-    type="search"
-    placeholder="Search jobs, exams, study material..."
-    oninput="searchContent()"
-  >
+<input
+id="searchBox"
+type="search" placeholder="Search jobs, exams, study oninput="searchContent()"
+243
+244
+245
+246
 </div>
-
 <nav>
-  <button class="active" onclick="showPage('home',this)">Home</button>
-  <button onclick="showPage('jobs',this)">Jobs</button>
-  <button onclick="showPage('study',this)">Study</button>
-  <button onclick="showPage('papers',this)">Old Papers</button>
-  <button onclick="showPage('admit',this)">Admit Cards</button>
-  <button onclick="showPage('results',this)">Results</button>
+247
+248
+249
+250
+251
+<button class="active" onclick="showPage
+<button onclick="showPage('jobs', this)">
+this)'
+<button onclick="showPage('study', <button onclick="showPage('papers', this) <button onclick="showPage('admit',this)' <button onclick="showPage('results', this
+252
+253
+254
+255
+256
+257
+258
 </nav>
-
 <main>
-
-<!-- HOME -->
+<!-- HOME
+-->
 <section id="home">
-
 <div class="hero">
-  <h1>Welcome to Aditya Job Updates</h1>
-
-  <p>
-    Get the latest Government and Private job updates,
-    recruitment notifications, Admit Cards, Results,
-    Study Material and Previous Year Question Papers.
-  </p>
-
-  <a
-    class="whatsapp"
-    href="https://whatsapp.com/channel/0029Vb98ZCT6xCSNUSf1Rv1t"
-    target="_blank"
-    rel="noopener"
-  >
-    Join WhatsApp Channel
-  </a>
+<h1>Welcome to Aditya Job Updates</h1>
+Get the latest Government and Private recruitment notifications, Admit Cards Study Material and Previous Year Quest
+259
+260
+261
+262
+263
+<p>
+264
+265
+266
+267
+</p>
+268
+269
+<a
+270
+271
+272
+273
+class="whatsapp"
+href="https://whatsapp.com/channel/002
+target="_blank"
+rel="noopener"
+Join WhatsApp Channel
 </div>
-
-<h2 class="section-title">Explore Categories</h2>
-
+<h2 class="section-title">Explore Categori
 <div class="grid">
-
-  <div class="card" onclick="showPage('jobs')">
-    <div class="icon">🏛️</div>
-    <h3>Government Jobs</h3>
-  </div>
-
-  <div class="card" onclick="showPage('jobs')">
-    <div class="icon">💼</div>
-    <h3>Private Jobs</h3>
-  </div>
-
-  <div class="card" onclick="showPage('study')">
-    <div class="icon">📚</div>
-    <h3>Study Material</h3>
-  </div>
-
-  <div class="card" onclick="showPage('papers')">
-    <div class="icon">📄</div>
-    <h3>Old Papers</h3>
-  </div>
-
-  <div class="card" onclick="showPage('admit')">
-    <div class="icon">🎫</div>
-    <h3>Admit Cards</h3>
-  </div>
-
-  <div class="card" onclick="showPage('results')">
-    <div class="icon">🏆</div>
-    <h3>Results</h3>
-  </div>
-
+274
+275
+276
+</a>
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
 </div>
-
+287
+288
+289
+290
+<div class="card" onclick="showPage('job
+<div class="icon"></div>
+<h3>Government Jobs</h3>
+<div class="card" onclick="showPage('job <div class="icon">
+</div>
+<h3>Private Jobs</h3>
+<div class="card" onclick="showPage('stu <div class="icon"></div> <h3>Study Material</h3>
+<div class="card" onclick="showPage('pap <div class="icon"></div> <h3>01d Papers</h3>
+291
+</div>
+292
+293
+294
+295
+296
+</div>
+297
+298
+299
+300
+301
+</div>
+302
+303
+304
+305
+306
+</div>
+307
+308
+309
+310
+311
+</div>
+312
+313
+<div class="card" onclick="showPage('adn <div class="icon"></div>
+<h3>Admit Cards</h3>
+<div class="card" onclick="showPage('res <div class="icon"></div>
+<h3>Results</h3>
+</div>
+314
+315
+316
+317
+318
+319
+320
+321
+322
 <section>
-
-<h2 class="section-title">Latest Updates</h2>
-
+<h2 class="section-title">Latest Updates</
 <div class="list">
-
 <div class="job searchable">
-  <h3>Latest Government Recruitment</h3>
-  <p>
-    Check new Government Job notifications and recruitment opportunities.
-  </p>
-  <button onclick="showPage('jobs')">View Jobs</button>
+<h3>Latest Government Recruitment</h3>
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+Check new Government Job notifications
+<p>
+</p>
+<button onclick="showPage( 'jobs ')">View
 </div>
-
+<div class="job searchable"> <h3>Banking Jobs</h3>
+<p>
+Latest Banking, Finance and Insurance
+</p>
+<button onclick="showPage('jobs ')">View
 <div class="job searchable">
-  <h3>Banking Jobs</h3>
-  <p>
-    Latest Banking, Finance and Insurance recruitment updates.
-  </p>
-  <button onclick="showPage('jobs')">View Jobs</button>
+<h3>Railway Recruitment</h3>
 </div>
-
-<div class="job searchable">
-  <h3>Railway Recruitment</h3>
-  <p>
-    Railway recruitment notifications, vacancies and important dates.
-  </p>
-  <button onclick="showPage('jobs')">View Jobs</button>
+336
+337
+338
+339
+<p>
+340
+341
+342
+</p>
+Railway recruitment notifications, vac
+<button onclick="showPage('jobs ')">View
+343
 </div>
-
+344
+345
 </div>
+346
 </section>
-
+347
+348
 </section>
-
-
+349
+350
+351
+352
+353
 <!-- JOBS -->
 <section id="jobs" class="hidden">
-
-<h2 class="section-title">Government Jobs</h2>
-
+<h2 class="section-title">Government Jobs<
+354
+355
+356
 <div class="list">
-
+357
+358
+359
 <div class="job searchable">
-  <h3>🏛️ Central & State Government Jobs</h3>
-  <p>
-    Latest Central and State Government recruitment notifications.
-  </p>
+<h3> Central & State Government Jobs</
+360
+<p>
+361
+Latest Central and State Government re
+362
+</p>
+363
 </div>
-
+364
+365 <div class="job searchable">
+366
+367
+368
+<h3>UPSC Jobs</h3>
+Jobs</p>
+<p>Administrative <p>Medical & Health Jobs</p>
 <div class="job searchable">
-  <h3>UPSC Jobs</h3>
-  <p>Administrative Jobs</p>
-  <p>Medical & Health Jobs</p>
+369
 </div>
-
+370
+371
+372
+373
+374
+375
+376
+<h3>State PSC Jobs</h3>
+Jobs</p>
+<p>Administrative <p>Police & Defence Jobs</p>
+<p>Teaching Jobs</p>
+<p>Medical & Health Jobs</p>
+<p>Agricultural Jobs</p>
+377
+378
+</div>
+379
+380
+381
+382
+383
+384
+385
+386
+387
 <div class="job searchable">
-  <h3>State PSC Jobs</h3>
-  <p>Administrative Jobs</p>
-  <p>Police & Defence Jobs</p>
-  <p>Teaching Jobs</p>
-  <p>Medical & Health Jobs</p>
-  <p>Agricultural Jobs</p>
+<h3>SSC Jobs</h3>
+<p>Administrative Jobs</p>
+<p>Other SSC Recruitment Opportunities</
 </div>
-
 <div class="job searchable">
-  <h3>SSC Jobs</h3>
-  <p>Administrative Jobs</p>
-  <p>Other SSC Recruitment Opportunities</p>
-</div>
-
+<h3>RSSB Jobs</h3>
+Rajasthan recruitment updates includir
+and other Government vacancies.
 <div class="job searchable">
-  <h3>RSSB Jobs</h3>
-  <p>
-    Rajasthan recruitment updates including Teaching
-    and other Government vacancies.
-  </p>
+<h3>Banking Jobs</h3>
+Bank Clerk, PO, Officer and other Bank
+388
+<p>
+389
+390
+391
+</p>
+392
 </div>
-
+393
+394
+395
+396
+<p>
+397
+398
+</p>
+399
+</div>
+400
+401
+402
+403
+404
+405
+</p>
+406
+</div>
+407
+<div class="job searchable"> <h3>Railway Jobs</h3>
+<p>
+RRB and Railway recruitment updates.
+408 <div class="job searchable"> <h3>Defence Jobs</h3>
+409
+410
+<p>
+411
+412
+413
+</div>
+</p>
+414
+415
+416
+417
+418
+419
+Defence, Army, Air Force and other rec
 <div class="job searchable">
-  <h3>Banking Jobs</h3>
-  <p>
-    Bank Clerk, PO, Officer and other Banking opportunities.
-  </p>
+<h3> Agricultural Jobs</h3>
+<p>
+Government Agricultural, Agriculture S allied-sector job opportunities.
+420
+</p>
+421
+422
 </div>
-
-<div class="job searchable">
-  <h3>Railway Jobs</h3>
-  <p>
-    RRB and Railway recruitment updates.
-  </p>
+<div class="job searchable"> <h3> Microbiology Jobs</h3>
+423
+424
+425
+<p>
+426
+427
+Government Microbiology, Laboratory, F
+related opportunities.
+428
+429
+430
+431
+</p>
 </div>
-
-<div class="job searchable">
-  <h3>Defence Jobs</h3>
-  <p>
-    Defence, Army, Air Force and other recruitment opportunities.
-  </p>
 </div>
-
-<div class="job searchable">
-  <h3>🌾 Agricultural Jobs</h3>
-  <p>
-    Government Agricultural, Agriculture Science and
-    allied-sector job opportunities.
-  </p>
-</div>
-
-<div class="job searchable">
-  <h3>🧬 Microbiology Jobs</h3>
-  <p>
-    Government Microbiology, Laboratory, Research and
-    related opportunities.
-  </p>
-</div>
-
-</div>
-
-
-<h2 class="section-title" style="margin-top:30px;">
-  Private Jobs
+432
+433
+434 <h2 class="section-title" style="margin-to
+435
+Private Jobs
+436
 </h2>
-
+437
+438
 <div class="list">
-
+439
+440
+441
+<h3>
 <div class="job category searchable">
-  <h3>💼 Private Jobs</h3>
-  <p>
-    Latest Private-sector vacancies and employment opportunities.
-  </p>
+Private Jobs</h3>
+442
+443
+<p>
+Latest Private-sector vacancies and en
+444
+</p>
+445
 </div>
-
+446
 <div class="job category searchable">
-  <h3>🌾 Private Agricultural Jobs</h3>
-  <p>
-    Private Agriculture, Agri-business and allied-sector jobs.
-  </p>
+<p>
+Private Agricultural Jobs</h3>
+Private Agriculture, Agri-business and
+447
+448
+<h3>
+449
+450
+451
+</p>
+452
 </div>
-
-<div class="job category searchable">
-  <h3>🧬 Private Microbiology Jobs</h3>
-  <p>
-    Private Laboratory, Biotechnology, Microbiology,
-    Research and Life Science opportunities.
-  </p>
+453
+454 <div class="job category searchable">
+455
+456
+457
+458
+459
+<h3>
+<p>
+Private Microbiology Jobs</h3>
+Private Laboratory, Biotechnology, Mic Research and Life Science opportunitie
+</p>
+460
+461
+462
+463
+464
+465
+466
 </div>
-
 </div>
-
 </section>
-
-
-<!-- STUDY MATERIAL -->
+467
+468
+469
+470
+471
+472
+473
+<!-- STUDY MATERIAL
+-->
 <section id="study" class="hidden">
-
-<h2 class="section-title">Study Material</h2>
-
+<h2 class="section-title">Study Material</
 <div class="grid">
-
+474
+475
+476
+<div class="card searchable"> <div class="icon"></div>
+<h3>General Knowledge</h3>
+477
+</div>
+478
+479
+480
+481
 <div class="card searchable">
-  <div class="icon">🌐</div>
-  <h3>General Knowledge</h3>
+<div class="icon">
 </div>
-
+<h3>Current Affairs</h3>
+482
+</div>
+483
+484
+485
+486
+487
+</div>
+488
+489
+490
+491
+492
+<div class="card searchable"> <div class="icon"></div>
+<h3>Mathematics</h3>
+<div class="card searchable"> <div class="icon"> abc </div>
+<h3>English</h3>
+</div>
+493
+494
+495
+496
+497
+<div class="card searchable"> <div class="icon">
+<h3>Reasoning</h3>
+</div>
+</div>
+498
+499
+500
+501
+502
+<div class="card searchable"> <div class="icon"></div>
+<h3>Computer</h3>
+</div>
+503
+504
+505
+506
 <div class="card searchable">
-  <div class="icon">📰</div>
-  <h3>Current Affairs</h3>
+<div class="icon">
 </div>
-
+<h3>Biotechnology & Science</h3>
+507
+</div>
+508
+509
+510
+511
 <div class="card searchable">
-  <div class="icon">➗</div>
-  <h3>Mathematics</h3>
+<div class="icon"></div>
+<h3>School Boards 9-12</h3>
+512
 </div>
-
-<div class="card searchable">
-  <div class="icon">🔤</div>
-  <h3>English</h3>
+513
+514
+515
 </div>
-
-<div class="card searchable">
-  <div class="icon">🧠</div>
-  <h3>Reasoning</h3>
-</div>
-
-<div class="card searchable">
-  <div class="icon">💻</div>
-  <h3>Computer</h3>
-</div>
-
-<div class="card searchable">
-  <div class="icon">🧬</div>
-  <h3>Biotechnology & Science</h3>
-</div>
-
-<div class="card searchable">
-  <div class="icon">🏫</div>
-  <h3>School Boards 9–12</h3>
-</div>
-
-</div>
-
+516
 <div class="hero">
-  <h3>Study PDFs Coming Soon</h3>
-  <p>
-    Downloadable study material for competitive examinations
-    and academic learning will be added here.
-  </p>
+<h3>Study PDFs Coming Soon</h3>
+<p>
+Downloadable study material for compet
+517
+518
+519
+520
+521
+</p>
+522
+523
 </div>
-
+and academic learning will be added he
+524
 </section>
-
-
+525
+526
+527
+528
+529
 <!-- OLD PAPERS -->
 <section id="papers" class="hidden">
-
-<h2 class="section-title">Previous Year Question Papers</h2>
-
+<h2 class="section-title">Previous Year Qu
+530
+531
+532
 <div class="list">
-
+533
+534
+535
+536
+537
+538
+539
+540
 <div class="job searchable">
-  <h3>SSC Previous Year Papers</h3>
-  <p>
-    Previous year question papers and practice material.
-  </p>
+<h3>SSC Previous Year Papers</h3>
+<p>
+Previous year question papers and prac
+</p>
 </div>
-
+<div class="job searchable"> <h3>Banking Previous Year Papers</h3>
+<p>
+IBPS, SBI and other Banking examinati
+541
+542
+543
+544
+545
+</p>
+546
+</div>
+547
+548
+549
+550
+551
 <div class="job searchable">
-  <h3>Banking Previous Year Papers</h3>
-  <p>
-    IBPS, SBI and other Banking examination papers.
-  </p>
+<h3>Railway Previous Year Papers</h3>
+<p>
+Previous Railway examination papers.
+552
+</p>
+553
 </div>
-
+554
+555
+556
+557
+558
+559
+</p>
+560
+</div>
+561
+562
+563
+564
 <div class="job searchable">
-  <h3>Railway Previous Year Papers</h3>
-  <p>
-    Previous Railway examination papers.
-  </p>
+<h3>Rajasthan Exams Papers</h3>
+<p>
+Previous year papers for Rajasthan con
 </div>
-
-<div class="job searchable">
-  <h3>Rajasthan Exams Papers</h3>
-  <p>
-    Previous year papers for Rajasthan competitive examinations.
-  </p>
-</div>
-
-</div>
-
 </section>
-
-
+565
+566
+567
 <!-- ADMIT CARDS -->
 <section id="admit" class="hidden">
-
+568
+569
+570
+571
+572
+573
+574
+575
 <h2 class="section-title">Admit Cards</h2>
-
 <div class="hero">
-  <h3>Latest Admit Card Updates</h3>
-  <p>
-    Admit cards and examination hall-ticket information
-    will be added here.
-  </p>
+<h3>Latest Admit Card Updates</h3>
+<p>
+Admit cards and examination hall-ticke
+will be added here.
+576
+577
+578
+</p>
 </div>
-
+579
+580
+581
+582
+583
+584
+585
+586
+587
 </section>
-
-
-<!-- RESULTS -->
+<!-- RESULTS
+-->
 <section id="results" class="hidden">
-
 <h2 class="section-title">Results</h2>
-
+588
+589
+590
+591
+592
+593
+594
 <div class="hero">
-  <h3>Latest Results</h3>
-  <p>
-    Government examination results, merit lists and
-    result announcements will be available here.
-  </p>
+<h3>Latest Results</h3>
+<p>
+Government examination results, merit
+result announcements will be available
+</p>
 </div>
-
+595
+596
 </section>
-
+597
+598
+599
 </main>
 </div>
-
-
+600
+601
+602
+603
+604
+605
+606
+607
+608
 <footer>
 <strong>Aditya Job Updates</strong><br>
-Govt. & Private Jobs | Study Material | Old Papers | Career Guide
+Govt. & Private Jobs | Study Material | 01
 <br><br>
 © 2026 Aditya Job Updates
 </footer>
-
-
+609
+610
+611
+612
+613
+614
 <script>
-
 function showPage(page, button){
-
-  document.querySelectorAll('main > section').forEach(function(section){
-    section.classList.add('hidden');
-  });
-
-  var selected = document.getElementById(page);
-
-  if(selected){
-    selected.classList.remove('hidden');
-  }
-
-  document.querySelectorAll('nav button').forEach(function(btn){
-    btn.classList.remove('active');
-  });
-
-  if(button){
-    button.classList.add('active');
-  }
-
-  window.scrollTo({
-    top:0,
-    behavior:'smooth'
-  });
+document.querySelectorAll('main> sectic section.classList.add('hidden');
+615
+616
+617
+618
+619
+620
+621
+622
+});
+var selected
+=
+document.getElementById(p
+if(selected){
+selected.classList.remove('hidden');
 }
-
-
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+}
+638
+document.querySelectorAll('nav button'). btn.classList.remove('active');
+});
+if(button) {
+button.classList.add('active');
+}
+window.scrollTo({
+top:0,
+behavior: 'smooth'
+});
+639
+640
+641
 function searchContent(){
-
-  var query =
-    document.getElementById('searchBox').value
-    .toLowerCase()
-    .trim();
-
-  document.querySelectorAll('.searchable').forEach(function(item){
-
-    var text = item.innerText.toLowerCase();
-
-    if(text.includes(query)){
-      item.style.display='';
-    }else{
-      item.style.display='none';
-    }
-
-  });
+=
+document.getElementById('searchBox').\
+.toLowerCase()
+var query
+642
+643
+644
+.trim();
+645
+646
+647
+648
+649
+650
+document.querySelectorAll('.searchable')
+var text =
+item.innerText.toLowerCase(
+if(text.includes (query)){
+item.style.display='';
+item.style.display='none';
+651
+652
+653
+}else{
+654
 }
-
+655
+656
+});
+657
+658
+659
+660
+661
+662
+}
 </script>
-
 </body>
 </html>
