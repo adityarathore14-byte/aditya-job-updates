@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b57d0">
-<meta name="description" content="Aditya Job Updates - Government and Private Jobs, Study Material and Old Papers">
+<meta name="description" content="Aditya Job Updates - Government and Private Jobs, Study Material, Old Papers, Current Affairs, Admit Cards and Results">
 <link rel="manifest" href="manifest.json">
 
 <title>Aditya Job Updates</title>
@@ -123,7 +124,7 @@ section{
 
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
   gap:12px;
 }
 
@@ -143,6 +144,12 @@ section{
 
 .card h3{
   font-size:15px;
+}
+
+.card p{
+  font-size:13px;
+  margin-top:5px;
+  color:#64748b;
 }
 
 .list{
@@ -177,8 +184,22 @@ section{
   border-radius:7px;
 }
 
+.category{
+  border-left-color:#168c45;
+}
+
+.category h3{
+  color:#168c45;
+}
+
 .hidden{
   display:none;
+}
+
+.small{
+  font-size:13px;
+  color:#64748b;
+  margin-top:5px;
 }
 
 footer{
@@ -188,12 +209,6 @@ footer{
   background:#102a43;
   color:white;
   font-size:14px;
-}
-
-.small{
-  font-size:13px;
-  color:#64748b;
-  margin-top:5px;
 }
 
 @media(max-width:600px){
@@ -211,43 +226,53 @@ footer{
 <body>
 
 <header>
-  <div class="logo">📢 Aditya Job Updates</div>
-  <div class="tagline">Govt. & Private Jobs • Study Material • Old Papers</div>
+  <div class="logo">Aditya Job Updates</div>
+  <div class="tagline">
+    Govt. & Private Jobs • Study Material • Old Papers • Career Guide
+  </div>
 </header>
 
 <div class="container">
 
 <div class="search">
-  <input id="searchBox" type="search"
-  placeholder="🔎 Search jobs, exams, study material..."
-  oninput="searchContent()">
+  <input
+    id="searchBox"
+    type="search"
+    placeholder="Search jobs, exams, study material..."
+    oninput="searchContent()"
+  >
 </div>
 
 <nav>
-  <button class="active" onclick="showPage('home',this)">🏠 Home</button>
-  <button onclick="showPage('jobs',this)">💼 Jobs</button>
-  <button onclick="showPage('study',this)">📚 Study</button>
-  <button onclick="showPage('papers',this)">📄 Old Papers</button>
-  <button onclick="showPage('admit',this)">🎫 Admit Cards</button>
-  <button onclick="showPage('results',this)">🏆 Results</button>
+  <button class="active" onclick="showPage('home',this)">Home</button>
+  <button onclick="showPage('jobs',this)">Jobs</button>
+  <button onclick="showPage('study',this)">Study</button>
+  <button onclick="showPage('papers',this)">Old Papers</button>
+  <button onclick="showPage('admit',this)">Admit Cards</button>
+  <button onclick="showPage('results',this)">Results</button>
 </nav>
 
 <main>
 
+<!-- HOME -->
 <section id="home">
 
 <div class="hero">
   <h1>Welcome to Aditya Job Updates</h1>
+
   <p>
     Get the latest Government and Private job updates,
-    recruitment notifications, admit cards, results,
-    study material and previous year question papers.
+    recruitment notifications, Admit Cards, Results,
+    Study Material and Previous Year Question Papers.
   </p>
 
-  <a class="whatsapp"
-     href="https://whatsapp.com/channel/0029Vb98ZcT6xCSNUSf1Rv1t"
-     target="_blank">
-     📲 Join WhatsApp Channel
+  <a
+    class="whatsapp"
+    href="https://whatsapp.com/channel/0029Vb98ZCT6xCSNUSf1Rv1t"
+    target="_blank"
+    rel="noopener"
+  >
+    Join WhatsApp Channel
   </a>
 </div>
 
@@ -255,59 +280,66 @@ footer{
 
 <div class="grid">
 
-<div class="card" onclick="showPage('jobs')">
-<div class="icon">💼</div>
-<h3>Government Jobs</h3>
-</div>
+  <div class="card" onclick="showPage('jobs')">
+    <div class="icon">🏛️</div>
+    <h3>Government Jobs</h3>
+  </div>
 
-<div class="card" onclick="showPage('jobs')">
-<div class="icon">🏢</div>
-<h3>Private Jobs</h3>
-</div>
+  <div class="card" onclick="showPage('jobs')">
+    <div class="icon">💼</div>
+    <h3>Private Jobs</h3>
+  </div>
 
-<div class="card" onclick="showPage('study')">
-<div class="icon">📚</div>
-<h3>Study Material</h3>
-</div>
+  <div class="card" onclick="showPage('study')">
+    <div class="icon">📚</div>
+    <h3>Study Material</h3>
+  </div>
 
-<div class="card" onclick="showPage('papers')">
-<div class="icon">📄</div>
-<h3>Old Papers</h3>
-</div>
+  <div class="card" onclick="showPage('papers')">
+    <div class="icon">📄</div>
+    <h3>Old Papers</h3>
+  </div>
 
-<div class="card" onclick="showPage('admit')">
-<div class="icon">🎫</div>
-<h3>Admit Cards</h3>
-</div>
+  <div class="card" onclick="showPage('admit')">
+    <div class="icon">🎫</div>
+    <h3>Admit Cards</h3>
+  </div>
 
-<div class="card" onclick="showPage('results')">
-<div class="icon">🏆</div>
-<h3>Results</h3>
-</div>
+  <div class="card" onclick="showPage('results')">
+    <div class="icon">🏆</div>
+    <h3>Results</h3>
+  </div>
 
 </div>
 
 <section>
-<h2 class="section-title">🔥 Latest Updates</h2>
+
+<h2 class="section-title">Latest Updates</h2>
 
 <div class="list">
 
 <div class="job searchable">
-<h3>Latest Government Recruitment</h3>
-<p>Check new government job notifications and recruitment opportunities.</p>
-<button onclick="alert('Open the latest notification from our WhatsApp channel.')">View Update</button>
+  <h3>Latest Government Recruitment</h3>
+  <p>
+    Check new Government Job notifications and recruitment opportunities.
+  </p>
+  <button onclick="showPage('jobs')">View Jobs</button>
 </div>
 
 <div class="job searchable">
-<h3>Banking Jobs</h3>
-<p>Latest Banking, Finance and Insurance recruitment updates.</p>
-<button onclick="showPage('jobs')">View Jobs</button>
+  <h3>Banking Jobs</h3>
+  <p>
+    Latest Banking, Finance and Insurance recruitment updates.
+  </p>
+  <button onclick="showPage('jobs')">View Jobs</button>
 </div>
 
 <div class="job searchable">
-<h3>Railway Recruitment</h3>
-<p>Railway recruitment notifications, vacancies and important dates.</p>
-<button onclick="showPage('jobs')">View Jobs</button>
+  <h3>Railway Recruitment</h3>
+  <p>
+    Railway recruitment notifications, vacancies and important dates.
+  </p>
+  <button onclick="showPage('jobs')">View Jobs</button>
 </div>
 
 </div>
@@ -316,36 +348,115 @@ footer{
 </section>
 
 
+<!-- JOBS -->
 <section id="jobs" class="hidden">
 
-<h2 class="section-title">💼 Government & Private Jobs</h2>
+<h2 class="section-title">Government Jobs</h2>
 
 <div class="list">
 
 <div class="job searchable">
-<h3>Government Jobs</h3>
-<p>Find the latest Central and State Government recruitment notifications.</p>
-<p class="small">Vacancy • Eligibility • Important Dates</p>
+  <h3>🏛️ Central & State Government Jobs</h3>
+  <p>
+    Latest Central and State Government recruitment notifications.
+  </p>
 </div>
 
 <div class="job searchable">
-<h3>Banking Jobs</h3>
-<p>Bank Clerk, PO, Officer and other banking opportunities.</p>
+  <h3>UPSC Jobs</h3>
+  <p>Administrative Jobs</p>
+  <p>Medical & Health Jobs</p>
 </div>
 
 <div class="job searchable">
-<h3>Railway Jobs</h3>
-<p>RRB and Railway recruitment updates.</p>
+  <h3>State PSC Jobs</h3>
+  <p>Administrative Jobs</p>
+  <p>Police & Defence Jobs</p>
+  <p>Teaching Jobs</p>
+  <p>Medical & Health Jobs</p>
+  <p>Agricultural Jobs</p>
 </div>
 
 <div class="job searchable">
-<h3>Defence Jobs</h3>
-<p>Defence, Army, Air Force and other recruitment opportunities.</p>
+  <h3>SSC Jobs</h3>
+  <p>Administrative Jobs</p>
+  <p>Other SSC Recruitment Opportunities</p>
 </div>
 
 <div class="job searchable">
-<h3>Private Jobs</h3>
-<p>Latest private-sector vacancies and employment opportunities.</p>
+  <h3>RSSB Jobs</h3>
+  <p>
+    Rajasthan recruitment updates including Teaching
+    and other Government vacancies.
+  </p>
+</div>
+
+<div class="job searchable">
+  <h3>Banking Jobs</h3>
+  <p>
+    Bank Clerk, PO, Officer and other Banking opportunities.
+  </p>
+</div>
+
+<div class="job searchable">
+  <h3>Railway Jobs</h3>
+  <p>
+    RRB and Railway recruitment updates.
+  </p>
+</div>
+
+<div class="job searchable">
+  <h3>Defence Jobs</h3>
+  <p>
+    Defence, Army, Air Force and other recruitment opportunities.
+  </p>
+</div>
+
+<div class="job searchable">
+  <h3>🌾 Agricultural Jobs</h3>
+  <p>
+    Government Agricultural, Agriculture Science and
+    allied-sector job opportunities.
+  </p>
+</div>
+
+<div class="job searchable">
+  <h3>🧬 Microbiology Jobs</h3>
+  <p>
+    Government Microbiology, Laboratory, Research and
+    related opportunities.
+  </p>
+</div>
+
+</div>
+
+
+<h2 class="section-title" style="margin-top:30px;">
+  Private Jobs
+</h2>
+
+<div class="list">
+
+<div class="job category searchable">
+  <h3>💼 Private Jobs</h3>
+  <p>
+    Latest Private-sector vacancies and employment opportunities.
+  </p>
+</div>
+
+<div class="job category searchable">
+  <h3>🌾 Private Agricultural Jobs</h3>
+  <p>
+    Private Agriculture, Agri-business and allied-sector jobs.
+  </p>
+</div>
+
+<div class="job category searchable">
+  <h3>🧬 Private Microbiology Jobs</h3>
+  <p>
+    Private Laboratory, Biotechnology, Microbiology,
+    Research and Life Science opportunities.
+  </p>
 </div>
 
 </div>
@@ -353,79 +464,99 @@ footer{
 </section>
 
 
+<!-- STUDY MATERIAL -->
 <section id="study" class="hidden">
 
-<h2 class="section-title">📚 Study Material</h2>
+<h2 class="section-title">Study Material</h2>
 
 <div class="grid">
 
 <div class="card searchable">
-<div class="icon">🧠</div>
-<h3>General Knowledge</h3>
+  <div class="icon">🌐</div>
+  <h3>General Knowledge</h3>
 </div>
 
 <div class="card searchable">
-<div class="icon">🌍</div>
-<h3>Current Affairs</h3>
+  <div class="icon">📰</div>
+  <h3>Current Affairs</h3>
 </div>
 
 <div class="card searchable">
-<div class="icon">➗</div>
-<h3>Mathematics</h3>
+  <div class="icon">➗</div>
+  <h3>Mathematics</h3>
 </div>
 
 <div class="card searchable">
-<div class="icon">📖</div>
-<h3>English</h3>
+  <div class="icon">🔤</div>
+  <h3>English</h3>
 </div>
 
 <div class="card searchable">
-<div class="icon">📝</div>
-<h3>Reasoning</h3>
+  <div class="icon">🧠</div>
+  <h3>Reasoning</h3>
 </div>
 
 <div class="card searchable">
-<div class="icon">💻</div>
-<h3>Computer</h3>
+  <div class="icon">💻</div>
+  <h3>Computer</h3>
+</div>
+
+<div class="card searchable">
+  <div class="icon">🧬</div>
+  <h3>Biotechnology & Science</h3>
+</div>
+
+<div class="card searchable">
+  <div class="icon">🏫</div>
+  <h3>School Boards 9–12</h3>
 </div>
 
 </div>
 
 <div class="hero">
-<h3>📥 Study PDFs Coming Soon</h3>
-<p>
-We will add downloadable study material PDFs
-for competitive examinations.
-</p>
+  <h3>Study PDFs Coming Soon</h3>
+  <p>
+    Downloadable study material for competitive examinations
+    and academic learning will be added here.
+  </p>
 </div>
 
 </section>
 
 
+<!-- OLD PAPERS -->
 <section id="papers" class="hidden">
 
-<h2 class="section-title">📄 Previous Year Question Papers</h2>
+<h2 class="section-title">Previous Year Question Papers</h2>
 
 <div class="list">
 
 <div class="job searchable">
-<h3>SSC Previous Year Papers</h3>
-<p>Previous year question papers and practice material.</p>
+  <h3>SSC Previous Year Papers</h3>
+  <p>
+    Previous year question papers and practice material.
+  </p>
 </div>
 
 <div class="job searchable">
-<h3>Banking Previous Year Papers</h3>
-<p>IBPS, SBI and other banking examination papers.</p>
+  <h3>Banking Previous Year Papers</h3>
+  <p>
+    IBPS, SBI and other Banking examination papers.
+  </p>
 </div>
 
 <div class="job searchable">
-<h3>Railway Previous Year Papers</h3>
-<p>Previous Railway examination papers.</p>
+  <h3>Railway Previous Year Papers</h3>
+  <p>
+    Previous Railway examination papers.
+  </p>
 </div>
 
 <div class="job searchable">
-<h3>Rajasthan Exams Papers</h3>
-<p>Previous year papers for Rajasthan competitive examinations.</p>
+  <h3>Rajasthan Exams Papers</h3>
+  <p>
+    Previous year papers for Rajasthan competitive examinations.
+  </p>
 </div>
 
 </div>
@@ -433,31 +564,33 @@ for competitive examinations.
 </section>
 
 
+<!-- ADMIT CARDS -->
 <section id="admit" class="hidden">
 
-<h2 class="section-title">🎫 Admit Cards</h2>
+<h2 class="section-title">Admit Cards</h2>
 
 <div class="hero">
-<h3>Latest Admit Card Updates</h3>
-<p>
-Admit cards and examination hall-ticket information
-will be added here.
-</p>
+  <h3>Latest Admit Card Updates</h3>
+  <p>
+    Admit cards and examination hall-ticket information
+    will be added here.
+  </p>
 </div>
 
 </section>
 
 
+<!-- RESULTS -->
 <section id="results" class="hidden">
 
-<h2 class="section-title">🏆 Results</h2>
+<h2 class="section-title">Results</h2>
 
 <div class="hero">
-<h3>Latest Results</h3>
-<p>
-Government examination results, merit lists and
-result announcements will be available here.
-</p>
+  <h3>Latest Results</h3>
+  <p>
+    Government examination results, merit lists and
+    result announcements will be available here.
+  </p>
 </div>
 
 </section>
@@ -465,9 +598,10 @@ result announcements will be available here.
 </main>
 </div>
 
+
 <footer>
 <strong>Aditya Job Updates</strong><br>
-Govt. & Private Jobs | Study Material | Old Papers
+Govt. & Private Jobs | Study Material | Old Papers | Career Guide
 <br><br>
 © 2026 Aditya Job Updates
 </footer>
@@ -475,13 +609,13 @@ Govt. & Private Jobs | Study Material | Old Papers
 
 <script>
 
-function showPage(page,button){
+function showPage(page, button){
 
-  document.querySelectorAll('section').forEach(function(section){
+  document.querySelectorAll('main > section').forEach(function(section){
     section.classList.add('hidden');
   });
 
-  var selected=document.getElementById(page);
+  var selected = document.getElementById(page);
 
   if(selected){
     selected.classList.remove('hidden');
@@ -504,11 +638,14 @@ function showPage(page,button){
 
 function searchContent(){
 
-  var query=document.getElementById('searchBox').value.toLowerCase();
+  var query =
+    document.getElementById('searchBox').value
+    .toLowerCase()
+    .trim();
 
   document.querySelectorAll('.searchable').forEach(function(item){
 
-    var text=item.innerText.toLowerCase();
+    var text = item.innerText.toLowerCase();
 
     if(text.includes(query)){
       item.style.display='';
@@ -520,44 +657,6 @@ function searchContent(){
 }
 
 </script>
-<section id="jobs" class="hidden">
 
-  <h2>🇮🇳 Government Jobs</h2>
-  <p>Find the latest Government Job opportunities by category.</p>
-
-  <div class="grid">
-
-    <div class="card">
-      <div class="icon">🏛️</div>
-      <h3>UPSC Jobs</h3>
-      <p>Administrative Jobs</p>
-      <p>Medical & Health Jobs</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🏢</div>
-      <h3>State PSC Jobs</h3>
-      <p>Administrative Jobs</p>
-      <p>Police & Defence Jobs</p>
-      <p>Teaching Jobs</p>
-      <p>Medical & Health Jobs</p>
-      <p>Agricultural Jobs</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">📋</div>
-      <h3>SSC Jobs</h3>
-      <p>Administrative Jobs</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🏛️</div>
-      <h3>RSSB Jobs</h3>
-      <p>Teaching Jobs</p>
-    </div>
-
-  </div>
-
-</section>
 </body>
 </html>
